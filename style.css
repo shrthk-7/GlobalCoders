@@ -1,0 +1,204 @@
+*   {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #f1faee;
+}
+body    {
+    background: #f1faee;
+}
+p   {
+    font-size: 1.5rem;
+    /* padding:0  1rem 2rem 1rem; */
+}
+h1  {
+    padding-bottom: 2rem;
+}
+h2  {
+    display: inline;
+    font: size 1.3rem;
+}
+
+.navbar {
+    position: relative;
+    
+    height: 8vh;
+    min-height: 2rem;
+    width: auto;
+    background: linear-gradient(-45deg, #C13584, #FD1D1D);
+    
+    display: flex;
+    align-items: center;
+}
+.navbar img {
+
+    float: left;
+    height: 8vh;
+    min-height: 2rem;    
+}
+.navbar .links a    {
+    float: left;
+    margin: 0 1rem;
+
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    color: beige;
+}
+.navbar .links a:hover    {
+    color: #023047
+}
+
+.contents   {
+    margin: 3rem 2rem;
+}
+.contents img   {
+    box-sizing: border-box;
+    height: 22vh;
+    margin: 1rem;
+    
+    padding: 1rem;
+    border: 3px solid #023047;
+    border-radius: 0.5rem;
+    background: white;
+}
+.contents img:hover {
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    /* border: 10px double black; */
+    padding: 2.2rem;
+}
+
+.contents .one,.contents .two {
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+
+    /* min-height: 30vh; */
+    padding: 2rem;
+    z-index: -100;
+}
+.contents .one {
+    /* background: linear-gradient(45deg,#015364, #0A9396); */
+    /* background: #1DB954; */
+    background: linear-gradient(45deg, #405DE6, #C13584); 
+}
+.contents .one img  {
+    float: left;
+}
+.contents .one p, .contents .one h1{
+    clear: right;
+}
+
+.contents .two  {
+    /* background: linear-gradient(45deg,#0A9396,#015364); */
+    background: linear-gradient(45deg,#F56040,#FCAF45);
+}
+.contents .two img  {
+    float: right;
+}
+.contents .two p, .contents .two h1{
+    clear: left;
+}
+.contents .one:hover, .contents .two:hover    {
+    transition: all 0s ease-in-out;
+    outline: 3px solid #023047;
+}
+
+.contents .profiles    {
+    clear: both;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.contents .profiles .link  {
+    margin: 2rem 4vw;
+    display: block;
+    padding: 0.5rem;
+    
+    color: #023047;
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-decoration: none;
+    
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.contents .profiles .link::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+
+    border-radius: 0.5rem;
+    background:  #f1faee;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+
+    transition: all 0.1s ease-in-out;
+}
+.contents .profiles .link::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    /* display: block; */
+    box-sizing: border-box;
+
+    border: 3px solid black;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+
+    transition: all 0.1s ease-in-out;
+}
+.contents .profiles .link:hover {
+    transition: all 0.1s linear;
+    font-weight: bold;
+}
+.contents .profiles .link:hover::after{
+    top: -5px;
+    left: -3px;
+}
+.contents .profiles .link:hover::before{
+    top: 3px;
+    left: 3px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+.button a p{
+    text-align: center;
+    line-height: 0.7rem;
+
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    background: transparent;
+    
+    padding: 0.5rem 0;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    position: fixed;
+    right: 4vw;
+    bottom: 2vh;
+}
+
+.button:hover a p   {
+    transition: all 0.1s linear;
+    background: #f1faee;
+}
+
+
